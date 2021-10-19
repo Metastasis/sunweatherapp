@@ -1,0 +1,24 @@
+{
+  "name": "sunweatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "fastify": "^3.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metastasis/sunweatherapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Metastasis/sunweatherapp/issues"
+  },
+  "homepage": "https://github.com/Metastasis/sunweatherapp#readme"
+}

@@ -1,0 +1,15 @@
+node_modules/
+.idea/
+*.iml
+*.log
+.DS_Store
+.env
+dist/**
+.vscode/
+configs/configs
+libs/libs
+src/src
+src/kits
+src/sites/mysite1
+src/ui/v3/**/lib
+libs/**/lib
