@@ -5,6 +5,11 @@ const User = require('../db/mongoose/models/User')
 
 const bcryptSalt = bcrypt.genSaltSync();
 
+async function getAuthUserInfo(request) {
+  const authorizedUser = await request.jwtVerify();
+  return authorizedUser;
+}
+
 async function createUser(request) {
   const dataToSave = clone(request.body);
 
@@ -17,5 +22,6 @@ async function createUser(request) {
 }
 
 module.exports = {
+  get: getAuthUserInfo,
   post: createUser
 };
