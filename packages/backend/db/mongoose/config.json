@@ -1,0 +1,7 @@
+{
+  "url": "mongodb+srv://arsb29:qwerty123@cluster0.cowdh.mongodb.net/sunweatherapp?retryWrites=true&w=majority&tlsInsecure=true",
+  "options": {
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true
+  }
+}

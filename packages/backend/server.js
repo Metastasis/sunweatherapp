@@ -1,18 +1,13 @@
-// Require the framework and instantiate it
-const fastify = require('fastify')({ logger: true })
+const fastify = require('fastify');
+const server = fastify({ logger: true });
+const fastifyJWT = require('fastify-jwt');
 
-// Declare a route
-fastify.get('/', async (request, reply) => {
-    return { hello: 'world' }
+server.register(fastifyJWT, {
+  secret: 'superPasswordForArsb29'
 })
 
-// Run the server!
-const start = async () => {
-    try {
-        await fastify.listen(3001)
-    } catch (err) {
-        fastify.log.error(err)
-        process.exit(1)
-    }
-}
-start()
+server
+  .listen(3001)
+  .catch(console.error)
+
+module.exports = { server };
